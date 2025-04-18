@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Rakesh Gaming Logo -->
+<div style="text-align: center; padding: 20px;">
+  <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-01e0-61f7-8606-60f0e5939c1b/raw?se=2025-04-17T20%3A28%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=e87ca59f-4dea-585e-aa63-ee9902c0be96&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-16T21%3A27%3A08Z&ske=2025-04-17T21%3A27%3A08Z&sks=b&skv=2024-08-04&sig=IKt4UA2CRbbUvH99Ru3%2BBDatMH8QBUkgiys6gqxPBJ0%3D" 
+       alt="Rakesh Gaming Logo" style="max-width: 100%; height: auto;" />
+</div>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Gaming</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111827;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      color: #fbbf24;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #fbbf24;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      background: #fff;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fbbf24;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px;
+      background: #f0f4f8;
+    }
+
+    .partners img {
+      width: 100px;
+      height: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services div {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .services h3 {
+      margin-top: 10px;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+      background: #e0e7ff;
+      flex-wrap: wrap;
+    }
+
+    .testimonial img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #333;
+    }
+
+    cite {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      flex-wrap: wrap;
+      background: #fefce8;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .testimonial, .contact {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img, .contact-img {
+        margin-top: 20px;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-logo">Rakesh Gaming</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <img 
+        src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-01e0-61f7-8606-60f0e5939c1b/raw?se=2025-04-17T18%3A13%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=cd9bd82e-b9cf-5ff0-9afb-a720e3c901b2&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-17T11%3A05%3A49Z&ske=2025-04-18T11%3A05%3A49Z&sks=b&skv=2024-08-04&sig=2ZS%2B3tHWQokbfGmSl2gzvkm00eYv8C5RcexG%2BAVa07c%3D" 
+        alt="Rakesh Gaming Logo" class="logo" />
+      <h1>Rakesh Gaming & Beyond</h1>
+      <p>Step into the universe of next-gen gaming. Discover, play, and compete like never before.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://cdn.mos.cms.futurecdn.net/wNtTQxJG3m6kz6GLmxVFx9.jpg" alt="Gaming Setup" />
+    </div>
+  </section>
+
+  <!-- Section 2: Showcase Image -->
+  <section class="visual">
+    <img src="https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2023/06/Valorant_MastersTokyo_2023_FNATIC-1024x576.jpg" alt="Esports Team" />
+  </section>
+
+  <!-- Section 3: Partners -->
+  <section class="partners">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg" alt="PlayStation">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/042/158/696/small/xbox-logo-icon-free-vector.jpg" alt="Xbox">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+  </section>
+
+  <!-- Section 4: Services -->
+  <section class="services" id="services">
+    <div>
+      <img src="https://img.icons8.com/ios-filled/100/000000/gaming.png" alt="Gaming Setup Icon" width="150">
+      <h3>Custom Tournaments</h3>
+      <p>Host or join live tournaments tailored for pros and casual gamers.</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/100/000000/thumb-up.png" alt="Game Reviews Icon" width="100">
+      <h3>Game Reviews</h3>
+      <p>Expert analysis and walkthroughs for the hottest games.</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/100/shopping-bag.png" alt="Merch Icon" width="100">
+      <h3>Merch & Gear</h3>
+      <p>Shop exclusive Rakesh Gaming merch, gear, and accessories.</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/100/controller.png" alt="Esports Coaching Icon" width="100">
+      <h3>Pro Coaching</h3>
+      <p>Level up your skills with coaching from esports veterans.</p>
+    </div>
+  </section>
+
+  <!-- Section 5: Testimonial -->
+  <section class="testimonial">
+    <img src="https://images.unsplash.com/photo-1615209862830-96aa80492b7a?fit=crop&w=100&q=80" alt="Gamer Avatar" />
+    <blockquote>
+      <p>"Rakesh Gaming gave me the platform to grow from a casual player to a competitive streamer. 10/10 would game again."</p>
+      <cite>- Alex “Nighthawk” Dev</cite>
+    </blockquote>
+  </section>
+
+  <!-- Section 6: Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Let’s Game Together!</h2>
+      <p>Questions or just want to say hi? We’re just a click away.</p>
+      <a href="mailto:contact@rakeshgaming.com" class="btn">Contact Us</a>
+    </div>
+    <div class="contact-img">
+      <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?fit=crop&w=400&q=80" alt="Gaming Dog" />
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Gaming - Contact & Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .form-section {
+      padding: 60px 20px;
+      background-color: #fefce8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    label.required::after {
+      content: "*";
+      color: red;
+      margin-left: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff9149;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e67e2c;
+    }
+  </style>
+</head>
+<body>
+  <section class="form-section">
+    <div class="form-container">
+      <h2>Login to Rakesh Gaming</h2>
+      <form action="https://submit-form.com/your-form-id" method="POST">
+        <label for="first-name" class="required">First Name</label>
+        <input id="first-name" name="first-name" type="text" required />
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" name="last-name" type="text" />
+
+        <label for="email" class="required">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="password" class="required">Password</label>
+        <input id="password" name="password" type="password" required />
+
+        <button type="submit">Login & Continue</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
+<section id="videos" style="padding: 20px;">
+  <h2>Featured Videos</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/mqKvSKCZORA" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/jZ8yz0QhpUE" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/X2ZA3_fvo8E" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/jptF6LJlkFg" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/t37rAWDPFOs" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/obQuzzIyYpY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/mhD0yVE5w8o" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/iEDLiRQWYhg" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
