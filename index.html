@@ -1,425 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <!-- Rakesh Gaming Logo -->
-<div style="text-align: center; padding: 20px;">
-  <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-01e0-61f7-8606-60f0e5939c1b/raw?se=2025-04-17T20%3A28%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=e87ca59f-4dea-585e-aa63-ee9902c0be96&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-16T21%3A27%3A08Z&ske=2025-04-17T21%3A27%3A08Z&sks=b&skv=2024-08-04&sig=IKt4UA2CRbbUvH99Ru3%2BBDatMH8QBUkgiys6gqxPBJ0%3D" 
-       alt="Rakesh Gaming Logo" style="max-width: 100%; height: auto;" />
-</div>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rakesh Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #111827;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-logo {
-      color: #fbbf24;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    .nav-links a:hover {
-      color: #fbbf24;
-    }
-
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 40px;
-      background: #fff;
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .logo {
-      width: 80px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .hero-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    .hero-text p {
-      margin-bottom: 20px;
-      color: #555;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #fbbf24;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .hero-img img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .visual img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .partners {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      padding: 40px;
-      background: #f0f4f8;
-    }
-
-    .partners img {
-      width: 100px;
-      height: auto;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      background: #fff;
-      text-align: center;
-    }
-
-    .services div {
-      background: #f8fafc;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .services h3 {
-      margin-top: 10px;
-    }
-
-    .testimonial {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      padding: 40px;
-      background: #e0e7ff;
-      flex-wrap: wrap;
-    }
-
-    .testimonial img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
-
-    blockquote {
-      font-style: italic;
-      color: #333;
-    }
-
-    cite {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .contact {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px;
-      flex-wrap: wrap;
-      background: #fefce8;
-    }
-
-    .contact-text {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .contact-img img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .hero, .testimonial, .contact {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero-img, .contact-img {
-        margin-top: 20px;
-      }
-
-      .nav-links {
-        margin-top: 10px;
-        text-align: center;
-        width: 100%;
-      }
-
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="nav-logo">Rakesh Gaming</div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Section 1: Hero -->
-  <section class="hero">
-    <div class="hero-text">
-      <img 
-        src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-01e0-61f7-8606-60f0e5939c1b/raw?se=2025-04-17T18%3A13%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=cd9bd82e-b9cf-5ff0-9afb-a720e3c901b2&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-17T11%3A05%3A49Z&ske=2025-04-18T11%3A05%3A49Z&sks=b&skv=2024-08-04&sig=2ZS%2B3tHWQokbfGmSl2gzvkm00eYv8C5RcexG%2BAVa07c%3D" 
-        alt="Rakesh Gaming Logo" class="logo" />
-      <h1>Rakesh Gaming & Beyond</h1>
-      <p>Step into the universe of next-gen gaming. Discover, play, and compete like never before.</p>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-    <div class="hero-img">
-      <img src="https://cdn.mos.cms.futurecdn.net/wNtTQxJG3m6kz6GLmxVFx9.jpg" alt="Gaming Setup" />
-    </div>
-  </section>
-
-  <!-- Section 2: Showcase Image -->
-  <section class="visual">
-    <img src="https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2023/06/Valorant_MastersTokyo_2023_FNATIC-1024x576.jpg" alt="Esports Team" />
-  </section>
-
-  <!-- Section 3: Partners -->
-  <section class="partners">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg" alt="PlayStation">
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/042/158/696/small/xbox-logo-icon-free-vector.jpg" alt="Xbox">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
-  </section>
-
-  <!-- Section 4: Services -->
-  <section class="services" id="services">
-    <div>
-      <img src="https://img.icons8.com/ios-filled/100/000000/gaming.png" alt="Gaming Setup Icon" width="150">
-      <h3>Custom Tournaments</h3>
-      <p>Host or join live tournaments tailored for pros and casual gamers.</p>
-    </div>
-    <div>
-      <img src="https://img.icons8.com/ios-filled/100/000000/thumb-up.png" alt="Game Reviews Icon" width="100">
-      <h3>Game Reviews</h3>
-      <p>Expert analysis and walkthroughs for the hottest games.</p>
-    </div>
-    <div>
-      <img src="https://img.icons8.com/ios-filled/100/shopping-bag.png" alt="Merch Icon" width="100">
-      <h3>Merch & Gear</h3>
-      <p>Shop exclusive Rakesh Gaming merch, gear, and accessories.</p>
-    </div>
-    <div>
-      <img src="https://img.icons8.com/ios-filled/100/controller.png" alt="Esports Coaching Icon" width="100">
-      <h3>Pro Coaching</h3>
-      <p>Level up your skills with coaching from esports veterans.</p>
-    </div>
-  </section>
-
-  <!-- Section 5: Testimonial -->
-  <section class="testimonial">
-    <img src="https://images.unsplash.com/photo-1615209862830-96aa80492b7a?fit=crop&w=100&q=80" alt="Gamer Avatar" />
-    <blockquote>
-      <p>"Rakesh Gaming gave me the platform to grow from a casual player to a competitive streamer. 10/10 would game again."</p>
-      <cite>- Alex “Nighthawk” Dev</cite>
-    </blockquote>
-  </section>
-
-  <!-- Section 6: Contact -->
-  <section class="contact" id="contact">
-    <div class="contact-text">
-      <h2>Let’s Game Together!</h2>
-      <p>Questions or just want to say hi? We’re just a click away.</p>
-      <a href="mailto:contact@rakeshgaming.com" class="btn">Contact Us</a>
-    </div>
-    <div class="contact-img">
-      <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?fit=crop&w=400&q=80" alt="Gaming Dog" />
-    </div>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+<!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rakesh Gaming - Contact & Login</title>
+  <title>STUDENT CHOICE</title>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
     }
 
-    .form-section {
-      padding: 60px 20px;
-      background-color: #fefce8;
+    header {
+      background-color: #03a791;
+      color: white;
+      padding: 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       align-items: center;
+      justify-content: space-between;
     }
 
-    .form-container {
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
-      width: 100%;
+    .logo {
+      height: 60px;
     }
 
-    .form-container h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      text-align: center;
-    }
-
-    label {
-      display: block;
-      margin: 15px 0 5px;
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    label.required::after {
-      content: "*";
-      color: red;
-      margin-left: 4px;
+    nav i {
+      margin-right: 5px;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
+    .hero {
+      text-align: center;
+      background-color: #e9f5be;
+      padding: 50px 20px;
+    }
+
+    .products {
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-card {
+      width: 250px;
       border: 1px solid #ccc;
-      font-size: 1rem;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background-color: #fff;
+      transition: box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
     button {
-      margin-top: 20px;
-      padding: 12px;
-      width: 100%;
-      border: none;
-      border-radius: 6px;
-      background-color: #ff9149;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #03a791;
       color: white;
-      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background-color: #e67e2c;
+    footer {
+      background-color: #03a791;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      padding-top: 80px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 30px;
+      border: 1px solid #888;
+      width: 400px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <section class="form-section">
-    <div class="form-container">
-      <h2>Login to Rakesh Gaming</h2>
-      <form action="https://submit-form.com/your-form-id" method="POST">
-        <label for="first-name" class="required">First Name</label>
-        <input id="first-name" name="first-name" type="text" required />
+  <header>
+    <img src="https://i.ibb.co/23jQzcdb/images-removebg-preview.png" alt="images-removebg-preview" border="0"alt="STUDENT CHOICE Logo" class="logo" />
+    <h1>STUDENT CHOICE</h1>
+    <nav>
+      <a href="#"><i class="fas fa-home"></i>Home</a>
+      <a href="#electronics"><i class="fas fa-plug"></i>Electronics</a>
+      <a href="#mobiles"><i class="fas fa-mobile-alt"></i>Mobiles</a>
+      <a href="#books"><i class="fas fa-book"></i>Books</a>
+      <a href="#fashion"><i class="fas fa-tshirt"></i>Fashion</a>
+      <a href="#footwear"><i class="fas fa-shoe-prints"></i>Footwear</a>
+      <a onclick="openLogin()"><i class="fas fa-user"></i>Login</a>
+      <a href="#cart"><i class="fas fa-shopping-cart"></i>Cart</a>
+    </nav>
+  </header>
 
-        <label for="last-name">Last Name</label>
-        <input id="last-name" name="last-name" type="text" />
+  <section class="hero">
+    <h2>Welcome to STUDENT CHOICE</h2>
+    <p>Your one-stop shop for student essentials</p>
+  </section>
 
-        <label for="email" class="required">Email</label>
-        <input id="email" name="email" type="email" required />
-
-        <label for="password" class="required">Password</label>
-        <input id="password" name="password" type="password" required />
-
-        <button type="submit">Login & Continue</button>
-      </form>
+  <!-- FASHION SECTION -->
+  <section class="products" id="fashion">
+    <h3>Fashion Products</h3>
+    <div style="text-align:right; margin-bottom: 10px;">
+      <label for="sortFashion">Sort by:</label>
+      <select id="sortFashion" onchange="sortFashionProducts()">
+        <option value="default">Default</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" onclick="showPreview('Stylish Shirt', '₹799', 'Comfortable cotton shirt.', 'images/shirt.jpg')">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR6jhTQE6A6GHDfWHHZHs0h9slQkwH5c7oBpCLzSI2sXiWxd3VA0S27g6Ub48mLcMe8w2plSzZibyUGp3QvMF3c0t-8qeBpSCNK-hSjiNY&usqp=CAc" alt="Shirt" />
+        <h4>Stylish Shirt</h4>
+        <p>₹799</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card" onclick="showPreview('BAGGY Pants', '₹999', 'Slim fit and stylish.', 'images/pants.jpg')">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTH-Kr9jPIsbbssc7RWjhq8GmZu-J9295Kyo2FDqRiQrej-4jz9HDS0Adz96-BRi10SFz0BwbLLlDVk55FGREFFyYqUquVIli1pdC-DQLxqcXEDhKzdQ3eiDAwTp83OcjNf4Pp3VrxEvqI&usqp=CAc" alt="Pants" />
+        <h4>Baggy Pants</h4>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+      </div>
     </div>
   </section>
+
+  <!-- FOOTWEAR SECTION -->
+  <section class="products" id="footwear">
+    <h3>Footwear</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="showPreview('Casual Sneakers', '₹1,299', 'Comfortable and stylish.', 'images/fashion2.jpg')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCnkRVq35OG3QKL4vvVKz_ny-pfY0WTSywA&s" alt="Sneakers" />
+        <h4>Casual Sneakers</h4>
+        <p>₹1,299</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILES SECTION -->
+  <section class="products" id="mobiles">
+    <h3>Mobiles</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="showPreview('Iphone 16pro max', '₹13,499', '6.5" Display, 50MP Camera.', 'images/mobile1.jpg')">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSLPDZUyEUzNHMYykl6puGcVOGqa0qiSLMEhswQOVU_brQiScr60Vqqg0zGGD5vspl9ZCuCEHuquh-c4xdXWQ4jgz_x3God_kUj1z6N50bHDmdI9Jzb0H-o9Tl6eyP2v9oKl172uw&usqp=CAc" alt="Mobile" />
+        <h4>Redmi Note 12</h4>
+        <p>₹13,499</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELECTRONICS SECTION -->
+  <section class="products" id="electronics">
+    <h3>Electronics</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="showPreview('Wireless Earbuds', '₹1,299', 'Long battery life.', 'images/earbuds.jpg')">
+        <img src="data:image/jpeg;base64,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" alt="Earbuds" />
+        <h4>Wireless Earbuds</h4>
+        <p>₹1,299</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS SECTION -->
+  <section class="products" id="books">
+    <h3>Books</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="showPreview('Atomic Habits', '₹499', 'Build better habits.', 'images/atomic.jpg')">
+        <img src="data:image/jpeg;base64,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" alt="Book" />
+        <h4>Atomic Habits</h4>
+        <p>₹499</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW MODAL -->
+  <div id="previewModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePreview()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImage" style="max-width: 300px; margin-bottom: 10px;" />
+      <p id="modalPrice" style="font-weight: bold; color: #03a791;"></p>
+      <p id="modalDescription"></p>
+      <button onclick="alert('Proceeding to purchase')">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h3>Login to STUDENT CHOICE</h3>
+      <input type="email" placeholder="Email" style="width: 100%; padding: 10px; margin: 10px 0;" />
+      <input type="password" placeholder="Password" style="width: 100%; padding: 10px; margin: 10px 0;" />
+      <button onclick="alert('Login successful! (mock)')">Login</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 STUDENT CHOICE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showPreview(name, price, description, image) {
+      document.getElementById('modalTitle').textContent = name;
+      document.getElementById('modalImage').src = image;
+      document.getElementById('modalPrice').textContent = price;
+      document.getElementById('modalDescription').textContent = description;
+      document.getElementById('previewModal').style.display = 'block';
+    }
+
+    function closePreview() {
+      document.getElementById('previewModal').style.display = 'none';
+    }
+
+    function openLogin() {
+      document.getElementById('loginModal').style.display = 'block';
+    }
+
+    function closeLogin() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    function sortFashionProducts() {
+      const container = document.querySelector('#fashion .product-grid');
+      const cards = Array.from(container.children);
+      const selected = document.getElementById('sortFashion').value;
+
+      cards.sort((a, b) => {
+        const priceA = parseInt(a.querySelector('p').innerText.replace(/[₹,]/g, ''));
+        const priceB = parseInt(b.querySelector('p').innerText.replace(/[₹,]/g, ''));
+        return selected === 'low' ? priceA - priceB : selected === 'high' ? priceB - priceA : 0;
+      });
+
+      cards.forEach(card => container.appendChild(card));
+    }
+
+    window.onclick = function(event) {
+      const previewModal = document.getElementById('previewModal');
+      const loginModal = document.getElementById('loginModal');
+      if (event.target === previewModal) {
+        previewModal.style.display = 'none';
+      }
+      if (event.target === loginModal) {
+        loginModal.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
-<section id="videos" style="padding: 20px;">
-  <h2>Featured Videos</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/mqKvSKCZORA" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/jZ8yz0QhpUE" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/X2ZA3_fvo8E" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/jptF6LJlkFg" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/t37rAWDPFOs" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/obQuzzIyYpY" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/mhD0yVE5w8o" frameborder="0" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/iEDLiRQWYhg" frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
